@@ -15,8 +15,13 @@ func main() {
 		the time, source file, and line number.
 	*/
 
+	//  a slices of names.
+	names := []string{"Tom", "Jack", "Bob"}
+	message, err := greetings.Hellos(names)
+	
 	// Request a greeting message.
-	message, err := greetings.Hello("Eastwoodli")
+	// message, err := greetings.Hello("East")
+
 
 	// If an error was returned, print it to the console and exit the program
 
@@ -25,7 +30,7 @@ func main() {
 		log.SetFlags(0)
 		log.Fatal(err)
 	}
-	
+
 	// Get a greeting message and print it.
 	// message:=greetings.Hello("Eastwoodli")
 	// message:= thumb.Thumb("Eastwoodli")
